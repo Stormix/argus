@@ -1,0 +1,6 @@
+{
+  "name": "@argus/sentinel",
+  "scripts": {
+    "build": "cargo build --release"
+  }
+}

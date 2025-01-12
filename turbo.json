@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "target/release/**"]
+    },
+    "format": {
+      "dependsOn": ["^format"],
+      "outputs": ["**/*.{js,jsx,ts,tsx,css,scss,md,json}"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "outputs": ["**/*.{js,jsx,ts,tsx,css,scss,md,json}"]
+    }
+  }
+}
