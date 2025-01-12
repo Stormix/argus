@@ -12,6 +12,7 @@ pub fn init_root_logger() -> Logger {
     Logger::root(drain, o!("version" => env!("CARGO_PKG_VERSION")))
 }
 
-pub fn create_child_logger(parent: &Logger, module: &str) -> Logger {
+pub fn create_child_logger(module: &str) -> Logger {
+    let parent = init_root_logger();
     parent.new(o!("module" => module.to_string()))
 }

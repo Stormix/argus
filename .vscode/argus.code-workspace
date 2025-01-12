@@ -7,6 +7,16 @@
 	"settings": {
 		"conventionalCommits.scopes": [
 			"@sentinel",
-		]
+		],
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "always",
+			"source.organizeImports": "always"
+		},
+		"[rust]": {
+			"editor.formatOnSave": true,
+		}
 	}
 }
+
