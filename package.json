@@ -5,9 +5,10 @@
 		"prepare": "husky",
 		"lint": "turbo run lint --parallel",
 		"format": "turbo run format --parallel",
-		"sentinel:dev": "cargo watch -x run -p sentinel -w ./apps/sentinel"
+		"sentinel:dev": "cross-env RUST_LOG=info cargo watch -x run -p sentinel -w ./apps/sentinel"
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"husky": "^9.1.7",
 		"turbo": "^2.3.3"
 	},

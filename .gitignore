@@ -30,3 +30,7 @@ coverage/
 .cargo/
 
 .turbo/
+
+# Ignore actual configuration files
+**/config/*.toml
+!**/config/*.example.toml

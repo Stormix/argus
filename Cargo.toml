@@ -1,5 +1,5 @@
 [workspace]
 members = [
-	"./apps/sentinel", "apps/sentinel",
+  "apps/sentinel",
 ]
 resolver = "3"
